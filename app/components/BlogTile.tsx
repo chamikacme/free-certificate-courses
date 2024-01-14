@@ -33,9 +33,12 @@ const BlogTile = ({ article, isLast = false }: BlogTileProps) => {
 
         {isLast && (
           <div className="absolute inset-0 bg-body bg-opacity-5 backdrop-blur-sm flex items-center justify-center">
-            <button className="text-white px-4 py-2 rounded-full bg-primary hover:bg-darkmode-secondary">
+            <Link
+              href={"/articles"}
+              className="text-white px-4 py-2 rounded-full bg-primary hover:bg-darkmode-secondary"
+            >
               See More Posts
-            </button>
+            </Link>
           </div>
         )}
       </div>

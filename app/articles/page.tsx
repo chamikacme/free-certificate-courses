@@ -1,6 +1,7 @@
 import { Article } from "@prisma/client";
-import BlogTile from "./components/BlogTile";
-import Tags from "./components/Tags";
+import Tags from "../components/Tags";
+import MainBlogTile from "./components/MainBlogTile";
+import Pagination from "../components/Pagination";
 
 const articles: Article[] = [
   {
@@ -114,35 +115,23 @@ const articles: Article[] = [
   },
 ];
 
-export default function Home() {
+const ArticlesPage = () => {
   return (
-    <div className="py-2">
-      <h1 className="text-text">Blogger Home</h1>
-      <section>
-        <h2 className="py-2 text-xl text-text font-bold">Featured posts</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {articles.slice(0, 3).map((article) => (
-            <BlogTile article={article} key={article.id} />
-          ))}
-          <BlogTile article={articles[3]} isLast={true} />
-        </div>
-      </section>
-      <section className="mt-3">
-        <h2 className="py-2 text-xl text-text font-bold">Latest posts</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-          {articles.slice(0, -1).map((article) => (
-            <BlogTile article={article} key={article.id} />
-          ))}
-
-          {articles.slice(-1).map((article) => (
-            <BlogTile article={article} key={article.id} isLast={true} />
+    <div className="py-2 flex gap-4">
+      <section className="lg:w-3/4">
+        <h1 className="text-text text-xl font-bold">All articles</h1>
+        <div className="flex flex-col gap-2 mt-2 mb-4">
+          {articles.map((article) => (
+            <MainBlogTile article={article} key={article.id} />
           ))}
         </div>
+        <Pagination />
       </section>
-
-      <section className="my-3">
+      <aside className="grow border rounded-lg p-5 mt-2 lg:w-1/4 hidden lg:block">
         <Tags />
-      </section>
+      </aside>
     </div>
   );
-}
+};
+
+export default ArticlesPage;
