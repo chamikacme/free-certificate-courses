@@ -19,7 +19,7 @@ const DropdownMenu = ({ links }: DropdownMenuProps) => {
       </button>
 
       {dropdownMenu && (
-        <div className="bg-body absolute top-16 -left-2 w-full p-6 mt-2 md:hidden">
+        <div className="bg-body absolute top-16 -left-2 w-full p-6 mt-2 md:hidden z-10">
           <ul className="flex flex-col space-y-2 container">
             {links.map(({ href, label }) => (
               <li

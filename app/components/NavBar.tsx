@@ -22,7 +22,7 @@ const NavBar = () => {
             <Link
               key={`${href}${label}`}
               href={href}
-              className="rounded-full px-6 py-2.5 text-left font-secondary text-[13.5px] capitalize  text-dark transition hover:bg-primary hover:text-white dark:text-darkmode-light md:px-3 md:py-3 lg:text-center xl:px-5"
+              className="rounded-full px-6 py-2.5 text-left font-secondary text-[13.5px] capitalize text-dark transition hover:bg-primary hover:text-white dark:text-darkmode-light md:px-3 md:py-3 lg:text-center xl:px-5"
             >
               {label}
             </Link>

@@ -42,9 +42,9 @@ const SearchBox = () => {
           <AiOutlineSearch />
         </button>
       ) : (
-        <div className="absolute top-4 left-6 right-6 ">
+        <div className="absolute top-4 left-6 right-6">
           <div
-            className={`flex items-center z-10 h-10 bg-body opacity-0 transition rounded-full container p-0 dark:bg-black ${
+            className={`flex items-center z-10 h-10 bg-body opacity-0 transition rounded-full container max-w-screen-xl p-0 dark:bg-black ${
               searchModal ? "visible opacity-100" : "invisible"
             }`}
           >

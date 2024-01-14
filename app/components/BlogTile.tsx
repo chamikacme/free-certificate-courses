@@ -3,9 +3,15 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-const BlogTile = ({ article }: { article: Article; key: number }) => {
+interface BlogTileProps {
+  article: Article;
+  key?: number;
+  isLast?: boolean;
+}
+
+const BlogTile = ({ article, isLast = false }: BlogTileProps) => {
   return (
-    <div className="justify-self-stretch bg-slate-100 rounded-xl overflow-hidden border">
+    <div className="justify-self-stretch bg-slate-100 rounded-xl overflow-hidden border backdrop-blur-md">
       <Image
         src="https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg"
         alt="Article Cover"
@@ -25,6 +31,14 @@ const BlogTile = ({ article }: { article: Article; key: number }) => {
         >
           Continue reading..
         </Link>
+
+        {isLast && (
+          <div className="absolute inset-0 bg-body bg-opacity-5 backdrop-blur-sm flex items-center justify-center">
+            <button className="text-white px-4 py-2 rounded-full bg-primary hover:bg-darkmode-secondary">
+              See More Posts
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
