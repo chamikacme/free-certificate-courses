@@ -2,14 +2,14 @@ import Link from "next/link";
 import DropdownMenu from "./DropdownMenu";
 import SearchBox from "./SearchBox";
 import { AiOutlineFire } from "react-icons/ai";
-import menu from "../config/menu.json";
+import menu from "../../config/menu.json";
 
 const NavBar = () => {
   const { links } = menu;
 
   return (
     <header className="flex border-b justify-center bg-slate-200">
-      <nav className="flex space-x-6 px-6 py-4 justify-between container items-center">
+      <nav className="flex space-x-6 px-6 py-4 justify-between container max-w-screen-xl items-center">
         <Link
           href="/"
           className="flex items-center text-xl text-primary font-bold"
