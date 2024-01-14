@@ -1,6 +1,5 @@
-import Image from "next/image";
-import BlogTile from "./components/BlogTile";
 import { Article } from "@prisma/client";
+import BlogTile from "./components/BlogTile";
 
 const articles: Article[] = [
   {
@@ -163,7 +162,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-3">
+      <section className="my-3">
         <h2 className="py-2 text-xl text-text font-bold">Popular tags</h2>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (

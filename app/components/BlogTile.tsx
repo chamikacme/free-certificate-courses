@@ -1,7 +1,6 @@
 import { Article } from "@prisma/client";
-import Link from "next/link";
-import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface BlogTileProps {
   article: Article;

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import DropdownMenu from "./DropdownMenu";
-import SearchBox from "./SearchBox";
 import { AiOutlineFire } from "react-icons/ai";
 import menu from "../../config/menu.json";
+import DropdownMenu from "./DropdownMenu";
+import SearchBox from "./SearchBox";
 
 const NavBar = () => {
   const { links } = menu;

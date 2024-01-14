@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 interface DropdownMenuProps {
   links: { href: string; label: string }[];
