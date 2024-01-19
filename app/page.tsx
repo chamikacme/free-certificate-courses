@@ -11,6 +11,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 5,
@@ -47,6 +51,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 7,
@@ -66,6 +72,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 8,
@@ -75,6 +82,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 9,
@@ -84,6 +92,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 10,
@@ -93,6 +102,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 11,
@@ -102,6 +112,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
   {
     id: 12,
@@ -111,6 +122,7 @@ const articles: Article[] = [
     createdAt: new Date(),
     updatedAt: new Date(),
     isExpired: false,
+    image: "https://miro.medium.com/v2/0*whce6YoyadZjJcVx.jpg",
   },
 ];
 

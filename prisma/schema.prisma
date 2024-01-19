@@ -15,6 +15,7 @@ model Article {
   title       String   @db.VarChar(255)
   description String?  @db.Text
   body        String?  @db.Text
+  image       String?  @db.Text
   isExpired   Boolean  @default(false)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt

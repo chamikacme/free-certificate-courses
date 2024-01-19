@@ -13,7 +13,7 @@ const Footer = () => {
               href="/"
               className="flex items-center text-xl text-primary font-bold"
             >
-              <p>Blog</p>
+              <div>Blog</div>
               <AiOutlineFire />
             </Link>
             <ul className="flex flex-col sm:flex-row flex-wrap sm:items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">

@@ -14,7 +14,7 @@ const NavBar = () => {
           href="/"
           className="flex items-center text-xl text-primary font-bold"
         >
-          <p>Blog</p>
+          <div>Blog</div>
           <AiOutlineFire />
         </Link>
         <ul className="hidden space-x-4 md:flex">
